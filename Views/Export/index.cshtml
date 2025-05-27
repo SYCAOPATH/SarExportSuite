@@ -1,57 +1,174 @@
 @{
-    ViewData["Title"] = "Export Options";
+    ViewData["Title"] = "SarExportSuite - Professional Data Export Platform";
 }
 
-<div class="container mt-4">
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="display-4">SarExportSuite</h1>
-            <p class="lead">Choose your export format below:</p>
-        </div>
-    </div>
-    
-    <div class="row mt-4">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        <i class="fas fa-file-excel text-success"></i>
-                        Export to Excel
-                    </h5>
-                    <p class="card-text">Export sample data to an Excel spreadsheet (.xlsx format)</p>
-                    <a href="@Url.Action("ExportExcel", "Export")" class="btn btn-success">
-                        <i class="fas fa-download"></i> Download Excel
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        <i class="fas fa-file-pdf text-danger"></i>
-                        Export to PDF
-                    </h5>
-                    <p class="card-text">Generate a PDF report with sample user data</p>
-                    <a href="@Url.Action("ExportPdf", "Export")" class="btn btn-danger">
-                        <i class="fas fa-download"></i> Download PDF
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="row mt-4">
-        <div class="col-md-12">
-            <div class="alert alert-info">
-                <h6><i class="fas fa-info-circle"></i> About SarExportSuite</h6>
-                <p class="mb-0">This application demonstrates export functionality using EPPlus for Excel and Rotativa for PDF generation.</p>
-            </div>
-        </div>
-    </div>
+<link rel="stylesheet" href="~/css/export-suite.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<div class="floating-elements">
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
 </div>
 
-@section Scripts {
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
-}
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i> Professional Export Solution
+            </div>
+            <h1 class="hero-title">SarExportSuite</h1>
+            <p class="hero-subtitle">Transform your data into professional documents with our advanced export platform</p>
+        </div>
+    </div>
+</section>
+
+<section class="export-cards">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-6 mb-4">
+                <div class="export-card card-enter">
+                    <div class="card-icon">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <h3 class="card-title">Excel Export</h3>
+                    <p class="card-description">
+                        Generate comprehensive Excel spreadsheets with advanced formatting, 
+                        multiple sheets, and professional styling. Perfect for data analysis and reporting.
+                    </p>
+                    <a href="@Url.Action("ExportExcel", "Export")" class="export-btn excel-btn">
+                        <i class="fas fa-download me-2"></i>Generate Excel Report
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-lg-5 col-md-6 mb-4">
+                <div class="export-card pdf-card card-enter">
+                    <div class="card-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3 class="card-title">PDF Export</h3>
+                    <p class="card-description">
+                        Create stunning PDF documents with custom layouts, professional typography, 
+                        and print-ready formatting. Ideal for official reports and presentations.
+                    </p>
+                    <a href="@Url.Action("ExportPdf", "Export")" class="export-btn pdf-btn">
+                        <i class="fas fa-download me-2"></i>Generate PDF Report
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h4 class="feature-title">Lightning Fast</h4>
+                    <p class="feature-description">Optimized export engine delivers results in seconds, not minutes</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="feature-title">Enterprise Security</h4>
+                    <p class="feature-description">Bank-level security ensures your data remains protected throughout the process</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4 class="feature-title">Highly Customizable</h4>
+                    <p class="feature-description">Flexible templates and formatting options to match your brand requirements</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="stats-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="stat-item">
+                    <span class="stat-number">99.9%</span>
+                    <span class="stat-label">Uptime</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-item">
+                    <span class="stat-number">10K+</span>
+                    <span class="stat-label">Documents Generated</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Support</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Add smooth scrolling and enhanced interactions
+    document.addEventListener('DOMContentLoaded', function() {
+        // Animate cards on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards
+        document.querySelectorAll('.export-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Add click ripple effect
+        document.querySelectorAll('.export-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                const x = e.clientX - rect.left - size / 2;
+                const y = e.clientY - rect.top - size / 2;
+                
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = x + 'px';
+                ripple.style.top = y + 'px';
+                ripple.classList.add('ripple');
+                
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+    });
+</script>

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SarExportSuite")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+582e299f0ce0e8083ccd6567b10f20e60e24243f")]
 [assembly: System.Reflection.AssemblyProductAttribute("SarExportSuite")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SarExportSuite")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

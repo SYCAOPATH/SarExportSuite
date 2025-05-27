@@ -102,3 +102,5 @@ C:\Users\Owner\SarExportSuite\obj\Debug\net9.0\refint\SarExportSuite.dll
 C:\Users\Owner\SarExportSuite\obj\Debug\net9.0\SarExportSuite.pdb
 C:\Users\Owner\SarExportSuite\obj\Debug\net9.0\SarExportSuite.genruntimeconfig.cache
 C:\Users\Owner\SarExportSuite\obj\Debug\net9.0\ref\SarExportSuite.dll
+C:\Users\Owner\SarExportSuite\obj\Debug\net9.0\SarExportSuite.sourcelink.json
+C:\Users\Owner\SarExportSuite\obj\Debug\net9.0\compressed\axpfvdax63-y3hdtxczb9.gz
